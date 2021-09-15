@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta-tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- refresh the page every one second -->
+    <!-- <meta http-equiv="Refresh" content="1"> -->
+
+    <title>Timer | Home</title>
+
+    <!-- Custom-Styling -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- form: countdown-container -->
+    <form class="countdown-container">
+
+        <table class="countdown-table">
+            <tr class="input-box">
+                <th>
+                    <input type="text" id="input-days" name="days" value="" placeholder="00" maxlength="2" required />
+                    <div class="title-days">days</div>
+                </th>
+                <th>
+                    <input type="text" id="input-hours" name="hours" value="" placeholder="00" maxlength="2" required />
+                    <div class="title-hours">hours</div>
+                </th>
+                <th>
+                    <input type="text" id="input-mins" name="mins" value="" placeholder="00" maxlength="2" required />
+                    <div class="title-mins">mins</div>
+                </th>
+                <th>
+                    <input type="text" id="input-secs" name="secs" value="" placeholder="00" maxlength="2" required />
+                    <div class="title-secs">secs</div>
+                </th>
+            </tr>
+        </table>
+
+        <div class="countdown-btn">
+            <div onclick="resetTime()" id="reset-box"><img src="./media/reset.svg" alt="reset" id="reset-btn" onclick="resetTime()" /></div>
+            <img src="./media/start.svg" alt="start" id="start-btn" onclick="startTime()" />
+            <img src="./media/pause.svg" alt="pause" id="pause-btn" onclick="pauseTime()" />
+        </div>
+
+    </form>
+
+    <!-- Custom-Scripting -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../../../fonts/Oswald.ttf);
+}
+
+body {
+  font-family: "Oswald";
+  color: #222f3e;
+}
+
+.countdown-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.countdown-table {
+  border: 0.1rem solid #222f3e;
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  height: 20%;
+}
+
+.countdown-table tr th {
+  border: 1px solid #222f3e;
+}
+
+.countdown-table tr th:nth-child(1),
+.countdown-table tr th:nth-child(2),
+.countdown-table tr th:nth-child(3) {
+  border-right: 0.1rem solid #222f3e;
+}
+
+#input-days,
+#input-hours,
+#input-mins,
+#input-secs {
+  border: none;
+  outline: none;
+  width: 25%;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.countdown-btn {
+  margin-top: 2rem;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reset-box {
+  border: 0.3rem solid #ED677B;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#reset-btn {
+  width: 1.4rem;
+}
+
+#start-btn {
+  -webkit-filter: invert(58%) sepia(35%) saturate(3977%) hue-rotate(133deg) brightness(95%) contrast(101%);
+          filter: invert(58%) sepia(35%) saturate(3977%) hue-rotate(133deg) brightness(95%) contrast(101%);
+}
+
+#pause-btn {
+  opacity: 0.5;
+}
+
+#start-btn,
+#pause-btn {
+  cursor: pointer;
+  width: 3rem;
+}
+
+#pause-btn,
+#reset-btn {
+  -webkit-filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
+          filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
+  pointer-events: none;
+}
+/*# sourceMappingURL=main.css.map */

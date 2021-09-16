@@ -30,6 +30,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
+  width: 100%;
 }
 
 .countdown-table {
@@ -62,6 +63,13 @@ body {
   font-family: "Oswald";
   font-weight: bolder;
   font-size: 2rem;
+}
+
+.title-days,
+.title-hours,
+.title-mins,
+.title-secs {
+  font-size: 1rem;
 }
 
 .countdown-btn {
@@ -120,5 +128,77 @@ body {
   -webkit-filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
           filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
   pointer-events: none;
+}
+
+@media (max-width: 1025px) {
+  .countdown-table {
+    width: 65%;
+  }
+  #input-days,
+  #input-hours,
+  #input-mins,
+  #input-secs {
+    font-size: 1.75rem;
+  }
+  .title-days,
+  .title-hours,
+  .title-mins,
+  .title-secs {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .countdown-table {
+    width: 85%;
+  }
+  #input-days,
+  #input-hours,
+  #input-mins,
+  #input-secs {
+    font-size: 1.5rem;
+  }
+  .title-days,
+  .title-hours,
+  .title-mins,
+  .title-secs {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-table {
+    width: 95%;
+  }
+  #input-days,
+  #input-hours,
+  #input-mins,
+  #input-secs {
+    font-size: 1.2rem;
+  }
+  .title-days,
+  .title-hours,
+  .title-mins,
+  .title-secs {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .countdown-table {
+    width: 100%;
+  }
+  #input-days,
+  #input-hours,
+  #input-mins,
+  #input-secs {
+    font-size: 1.15rem;
+  }
+  .title-days,
+  .title-hours,
+  .title-mins,
+  .title-secs {
+    font-size: 0.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

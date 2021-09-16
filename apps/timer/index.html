@@ -25,19 +25,19 @@
         <table class="countdown-table">
             <tr class="input-box">
                 <th>
-                    <input type="text" id="input-days" name="days" value="" placeholder="00" maxlength="2" required />
+                    <input type="text" id="input-days" name="days" value="" placeholder="00" maxlength="2" autocomplete="off" required />
                     <div class="title-days">days</div>
                 </th>
                 <th>
-                    <input type="text" id="input-hours" name="hours" value="" placeholder="00" maxlength="2" required />
+                    <input type="text" id="input-hours" name="hours" value="" placeholder="00" maxlength="2" autocomplete="off" required />
                     <div class="title-hours">hours</div>
                 </th>
                 <th>
-                    <input type="text" id="input-mins" name="mins" value="" placeholder="00" maxlength="2" required />
+                    <input type="text" id="input-mins" name="mins" value="" placeholder="00" maxlength="2" autocomplete="off" required />
                     <div class="title-mins">mins</div>
                 </th>
                 <th>
-                    <input type="text" id="input-secs" name="secs" value="" placeholder="00" maxlength="2" required />
+                    <input type="text" id="input-secs" name="secs" value="" placeholder="00" maxlength="2" autocomplete="off" required />
                     <div class="title-secs">secs</div>
                 </th>
             </tr>
@@ -46,7 +46,7 @@
         <div class="countdown-btn">
             <div onclick="resetTime()" id="reset-box"><img src="./media/reset.svg" alt="reset" id="reset-btn" onclick="resetTime()" /></div>
             <img src="./media/start.svg" alt="start" id="start-btn" onclick="startTime()" />
-            <img src="./media/pause.svg" alt="pause" id="pause-btn" onclick="pauseTime()" />
+            <!-- <img src="./media/pause.svg" alt="pause" id="pause-btn" onclick="pauseTime()" /> -->
         </div>
 
     </form>

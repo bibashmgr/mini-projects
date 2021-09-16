@@ -5,7 +5,6 @@ const mins = document.getElementById('input-mins');
 const secs = document.getElementById('input-secs');
 
 const startBtn = document.getElementById('start-btn');
-// const pauseBtn = document.getElementById('pause-btn');
 const resetBox = document.getElementById('reset-box');
 const resetBtn = document.getElementById('reset-btn');
 
@@ -49,19 +48,17 @@ function startTime() {
 
             } else {
 
-                // pauseBtn.setAttribute("style", "opacity:0.5; pointer-events:none");
-                clearInterval();
+                clearInterval(myCounter);
 
             }
 
         }
 
         startBtn.setAttribute("style", "opacity:0.5; pointer-events:none");
-        // pauseBtn.setAttribute("style", "opacity:1; pointer-events:all");
         resetBox.setAttribute("style", "opacity:1; pointer-events:all");
         resetBtn.setAttribute("style", "opacity:1; pointer-events:all");
 
-        setInterval(totalGap, 1000);
+        const myCounter = setInterval(totalGap, 1000);
 
     } else {
 
@@ -71,16 +68,8 @@ function startTime() {
 
 }
 
-// function pauseTime() {
-//     startBtn.setAttribute("style", "opacity:1; pointer-events:all");
-//     pauseBtn.setAttribute("style", "opacity:0.5; pointer-events:none");
-//     resetBox.setAttribute("style", "opacity:1; pointer-events:all");
-//     resetBtn.setAttribute("style", "opacity:1; pointer-events:all");
-// }
-
 function resetTime() {
     startBtn.setAttribute("style", "opacity:1; pointer-events:all");
-    // pauseBtn.setAttribute("style", "opacity:0.5; pointer-events:none");
     resetBox.setAttribute("style", "opacity:0.5; pointer-events:none");
     resetBtn.setAttribute("style", "opacity:0.5; pointer-events:none");
     location.reload();

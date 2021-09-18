@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../../../fonts/Oswald.ttf);
+}
+
+body {
+  font-family: "Oswald";
+  color: #222f3e;
+}
+
+.stopwatch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.stopwatch-table {
+  border: 0.1rem solid #222f3e;
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  height: 20%;
+}
+
+.stopwatch-table tr {
+  text-align: center;
+}
+
+.stopwatch-table tr th {
+  border: 1px solid #222f3e;
+  width: 33%;
+}
+
+.stopwatch-table tr th:nth-child(1),
+.stopwatch-table tr th:nth-child(2) {
+  border-right: 0.1rem solid #222f3e;
+}
+
+#display-mins,
+#display-secs,
+#display-milisecs {
+  padding: 0.5rem 0rem;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: bolder;
+  font-size: 2rem;
+  opacity: 0.75;
+  cursor: default;
+}
+
+.title-mins,
+.title-secs,
+.title-milisecs {
+  font-size: 1rem;
+  cursor: default;
+}
+
+.stopwatch-btn {
+  margin-top: 2rem;
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reset-box {
+  border: 0.3rem solid #ED677B;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#reset-btn {
+  width: 1.4rem;
+}
+
+#start-btn {
+  -webkit-filter: invert(58%) sepia(35%) saturate(3977%) hue-rotate(133deg) brightness(95%) contrast(101%);
+          filter: invert(58%) sepia(35%) saturate(3977%) hue-rotate(133deg) brightness(95%) contrast(101%);
+}
+
+#pause-btn {
+  opacity: 0.5;
+}
+
+#start-btn,
+#pause-btn {
+  cursor: pointer;
+  width: 3rem;
+}
+
+#reset-btn,
+#pause-btn {
+  -webkit-filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
+          filter: invert(64%) sepia(34%) saturate(4595%) hue-rotate(311deg) brightness(96%) contrast(94%);
+  pointer-events: none;
+}
+
+@media (max-width: 1025px) {
+  .countdown-table {
+    width: 65%;
+  }
+  #display-mins,
+  #display-secs,
+  #display-milisecs {
+    font-size: 1.75rem;
+  }
+  .title-mins,
+  .title-secs,
+  .title-milisecs {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .countdown-table {
+    width: 85%;
+  }
+  #display-mins,
+  #display-secs,
+  #display-milisecs {
+    font-size: 1.5rem;
+  }
+  .title-mins,
+  .title-secs,
+  .title-milisecs {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-table {
+    width: 95%;
+  }
+  #display-mins,
+  #display-secs,
+  #display-milisecs {
+    font-size: 1.2rem;
+  }
+  .title-mins,
+  .title-secs,
+  .title-milisecs {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .countdown-table {
+    width: 100%;
+  }
+  #display-mins,
+  #display-secs,
+  #display-milisecs {
+    font-size: 1.15rem;
+  }
+  .title-mins,
+  .title-secs,
+  .title-milisecs {
+    font-size: 0.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

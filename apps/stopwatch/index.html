@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta-tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch | Home</title>
+
+    <!-- Custom-Styling -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <!-- form: stopwatch-container -->
+    <section class="stopwatch-container">
+
+        <table class="stopwatch-table">
+            <tr>
+                <th>
+                    <div id="display-mins">00</div>
+                    <div class="title-mins">mins</div>
+                </th>
+                <th>
+                    <div id="display-secs">00</div>
+                    <div class="title-secs">secs</div>
+                </th>
+                <th>
+                    <div id="display-milisecs">00</div>
+                    <div class="title-milisecs">milisecs</div>
+                </th>
+            </tr>
+        </table>
+
+        <div class="stopwatch-btn">
+            <div id="reset-box" onclick="resetTime()"><img src="./media/reset.svg" alt="reset" id="reset-btn" onclick="resetTime()" /></div>
+            <img src="./media/start.svg" alt="start" id="start-btn" onclick="startTime()" />
+            <img src="./media/pause.svg" alt="start" id="pause-btn" onclick="pauseTime()" />
+        </div>
+
+    </section>
+
+    <!-- Custom-Scripting -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

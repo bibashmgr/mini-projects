@@ -6,3 +6,4 @@ The lists are as follows:
 - [Timer](https://github.com/bibashmgr/mini-projects/tree/master/apps/timer/)
 - [Stopwatch](https://github.com/bibashmgr/mini-projects/tree/master/apps/stopwatch/)
 - [Digital Clock](https://github.com/bibashmgr/mini-projects/tree/master/apps/digitalClock/)
+- [Analog Clock](https://github.com/bibashmgr/mini-projects/tree/master/apps/analogClock/)

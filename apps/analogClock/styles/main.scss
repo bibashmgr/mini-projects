@@ -1,0 +1,263 @@
+// variable declaration:
+$font: "Oswald";
+$primary: #2B2B2B;
+$secondary: #F2F2F2;
+// styling
+@font-face {
+    font-family: $font;
+    src: url(../../../fonts/Oswald.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    color: $primary;
+    background-color: $secondary;
+    transition: all 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+}
+
+// div: clock
+.clock-container {
+    width: 25rem;
+    height: 25rem;
+    border: 0.25rem solid $primary;
+    border-radius: 50%;
+    position: relative;
+}
+
+// creating a black dot on the center of the circle
+.clock-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    background-color: $primary;
+    border-radius: 50%;
+}
+
+// div: clock-numbers
+.num {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+// creating lines after the numbers
+.num::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.2rem;
+    height: 0.6rem;
+    border-radius: 1px;
+    background-color: $primary;
+}
+
+.num-one {
+    transform: rotate(30deg);
+}
+
+.num-one>div {
+    transform: rotate(-30deg);
+}
+
+.num-two {
+    transform: rotate(60deg);
+}
+
+.num-two>div {
+    transform: rotate(-60deg);
+}
+
+.num-three {
+    transform: rotate(90deg);
+}
+
+.num-three>div {
+    transform: rotate(-90deg);
+}
+
+.num-four {
+    transform: rotate(120deg);
+}
+
+.num-four>div {
+    transform: rotate(-120deg);
+}
+
+.num-five {
+    transform: rotate(150deg);
+}
+
+.num-five>div {
+    transform: rotate(-150deg);
+}
+
+.num-six {
+    transform: rotate(180deg);
+}
+
+.num-six>div {
+    transform: rotate(-180deg);
+}
+
+.num-seven {
+    transform: rotate(210deg);
+}
+
+.num-seven>div {
+    transform: rotate(-210deg);
+}
+
+.num-eight {
+    transform: rotate(240deg);
+}
+
+.num-eight>div {
+    transform: rotate(-240deg);
+}
+
+.num-nine {
+    transform: rotate(270deg);
+}
+
+.num-nine>div {
+    transform: rotate(-270deg);
+}
+
+.num-ten {
+    transform: rotate(300deg);
+}
+
+.num-ten>div {
+    transform: rotate(-300deg);
+}
+
+.num-eleven {
+    transform: rotate(330deg);
+}
+
+.num-eleven>div {
+    transform: rotate(-330deg);
+}
+
+.num-twelve {
+    transform: rotate(0deg);
+}
+
+.num-twelve>div {
+    transform: rotate(-0deg);
+}
+
+// div: clock-hands
+.hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hand>div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: $primary;
+}
+
+#sec {
+    width: 0.1rem;
+    height: 40%;
+}
+
+#min {
+    width: 0.2rem;
+    height: 37%;
+    border-radius: 2px;
+}
+
+#hour {
+    width: 0.25rem;
+    height: 25%;
+    border-radius: 4px;
+}
+
+// div: dark-mode
+.dark-mode-container {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+
+.dark-mode-box {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: $primary;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.dark-mode-box>.dark-mode-btn {
+    margin-left: 0.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: invert(100%) sepia(0%) saturate(6000%) hue-rotate(237deg) brightness(113%) contrast(90%);
+    transition: margin 0.5s;
+}
+
+body.active {
+    background-color: $primary;
+    color: $secondary;
+}
+
+.clock-container.active {
+    border: 0.25rem solid $secondary;
+}
+
+.clock-container.active::before {
+    background-color: $secondary;
+}
+
+.clock-container.active>div::after {
+    background-color: #F2F2F2
+}
+
+.hand.active>div {
+    background-color: $secondary;
+}
+
+.dark-mode-box.active {
+    background-color: $secondary;
+}
+
+.dark-mode-box.active>.dark-mode-btn {
+    margin-left: 1.5rem;
+    filter: invert(11%) sepia(20%) saturate(16%) hue-rotate(340deg) brightness(102%) contrast(87%);
+}

@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../../../fonts/Oswald.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+  color: #2B2B2B;
+  background-color: #F2F2F2;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.clock-container {
+  width: 25rem;
+  height: 25rem;
+  border: 0.25rem solid #2B2B2B;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  background-color: #2B2B2B;
+  border-radius: 50%;
+}
+
+.num {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.num::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0.2rem;
+  height: 0.6rem;
+  border-radius: 1px;
+  background-color: #2B2B2B;
+}
+
+.num-one {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.num-one > div {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.num-two {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.num-two > div {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.num-three {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.num-three > div {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.num-four {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.num-four > div {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.num-five {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.num-five > div {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+}
+
+.num-six {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.num-six > div {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.num-seven {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.num-seven > div {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+}
+
+.num-eight {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.num-eight > div {
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+}
+
+.num-nine {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.num-nine > div {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.num-ten {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.num-ten > div {
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+}
+
+.num-eleven {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.num-eleven > div {
+  -webkit-transform: rotate(-330deg);
+          transform: rotate(-330deg);
+}
+
+.num-twelve {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.num-twelve > div {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hand > div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  background-color: #2B2B2B;
+}
+
+#sec {
+  width: 0.1rem;
+  height: 40%;
+}
+
+#min {
+  width: 0.2rem;
+  height: 37%;
+  border-radius: 2px;
+}
+
+#hour {
+  width: 0.25rem;
+  height: 25%;
+  border-radius: 4px;
+}
+
+.dark-mode-container {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.dark-mode-box {
+  width: 3rem;
+  height: 1.5rem;
+  background-color: #2B2B2B;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.dark-mode-box > .dark-mode-btn {
+  margin-left: 0.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  -webkit-filter: invert(100%) sepia(0%) saturate(6000%) hue-rotate(237deg) brightness(113%) contrast(90%);
+          filter: invert(100%) sepia(0%) saturate(6000%) hue-rotate(237deg) brightness(113%) contrast(90%);
+  -webkit-transition: margin 0.5s;
+  transition: margin 0.5s;
+}
+
+body.active {
+  background-color: #2B2B2B;
+  color: #F2F2F2;
+}
+
+.clock-container.active {
+  border: 0.25rem solid #F2F2F2;
+}
+
+.clock-container.active::before {
+  background-color: #F2F2F2;
+}
+
+.clock-container.active > div::after {
+  background-color: #F2F2F2;
+}
+
+.hand.active > div {
+  background-color: #F2F2F2;
+}
+
+.dark-mode-box.active {
+  background-color: #F2F2F2;
+}
+
+.dark-mode-box.active > .dark-mode-btn {
+  margin-left: 1.5rem;
+  -webkit-filter: invert(11%) sepia(20%) saturate(16%) hue-rotate(340deg) brightness(102%) contrast(87%);
+          filter: invert(11%) sepia(20%) saturate(16%) hue-rotate(340deg) brightness(102%) contrast(87%);
+}
+/*# sourceMappingURL=main.css.map */

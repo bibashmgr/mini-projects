@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta-tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Analog Clock | Home</title>
+
+    <!-- Custom-styling -->
+    <link rel="stylesheet" href="./styles/main.css" />
+
+</head>
+
+<body>
+
+    <!-- section: container -->
+    <section class="container">
+
+        <!-- div: clock-container -->
+        <div class="clock-container" id="clock-container">
+
+            <!-- divs: clock-numbers -->
+            <div class="num num-one">
+                <div>1</div>
+            </div>
+            <div class="num num-two">
+                <div>2</div>
+            </div>
+            <div class="num num-three">
+                <div>3</div>
+            </div>
+            <div class="num num-four">
+                <div>4</div>
+            </div>
+            <div class="num num-five">
+                <div>5</div>
+            </div>
+            <div class="num num-six">
+                <div>6</div>
+            </div>
+            <div class="num num-seven">
+                <div>7</div>
+            </div>
+            <div class="num num-eight">
+                <div>8</div>
+            </div>
+            <div class="num num-nine">
+                <div>9</div>
+            </div>
+            <div class="num num-ten">
+                <div>10</div>
+            </div>
+            <div class="num num-eleven">
+                <div>11</div>
+            </div>
+            <div class="num num-twelve">
+                <div>12</div>
+            </div>
+
+            <!-- divs: clock-hands -->
+            <div class="hand" id="second-hand">
+                <div id="sec"></div>
+            </div>
+            <div class="hand" id="minute-hand">
+                <div id="min"></div>
+            </div>
+            <div class="hand" id="hour-hand">
+                <div id="hour"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- div: dark-mode -->
+    <div class="dark-mode-container">
+        <div class="dark-mode-box" onclick="darkMode(this)">
+            <img src="./media/dark-mode-btn.svg" alt="dark-mode-btn" class="dark-mode-btn" />
+        </div>
+    </div>
+
+    <!-- Custom-scripting -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

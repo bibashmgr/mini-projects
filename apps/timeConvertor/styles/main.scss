@@ -1,0 +1,110 @@
+// variables-declaration:
+$font: "Oswald";
+$primary: #F2F2F2;
+$secondary: #2B2B2B;
+@font-face {
+    font-family: $font;
+    src: url(../../../fonts/Oswald.ttf);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// styling:
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    color: $primary;
+    background-color: $secondary;
+}
+
+.container {
+    @include flex-center;
+    width: 100%;
+    height: 90vh;
+    .convertor-container {
+        width: 50%;
+        text-align: center;
+        border-collapse: collapse;
+        .values-box {
+            width: 100%;
+            height: 6rem;
+            font-size: 3rem;
+            font-weight: bolder;
+            #input-value-box {
+                border: 0.1rem solid $primary;
+                width: 40%;
+                text-align: center;
+                #input-value {
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    font-family: $font;
+                    font-size: 3rem;
+                    font-weight: bolder;
+                    color: $primary;
+                    background-color: $secondary;
+                    border: none;
+                    outline: none;
+                    opacity: 0.75;
+                }
+            }
+            #equal-to {
+                width: 20%;
+            }
+            #output-value-box {
+                border: 0.1rem solid $primary;
+                width: 40%;
+                cursor: default;
+                opacity: 0.75;
+                #output-value {
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    font-family: $font;
+                    font-size: 3rem;
+                    font-weight: bolder;
+                    color: $primary;
+                    background-color: $secondary;
+                    border: none;
+                    outline: none;
+                    opacity: 0.75;
+                }
+            }
+        }
+        .units-box {
+            width: 100%;
+            height: 1rem;
+            #input-unit-box {
+                border: 0.1rem solid $primary;
+                #input-unit {
+                    font-size: 1.25rem;
+                    width: 100%;
+                    height: 100%;
+                    color: $primary;
+                    background-color: $secondary;
+                    cursor: pointer;
+                }
+            }
+            #output-unit-box {
+                border: 0.1rem solid $primary;
+                #output-unit {
+                    font-size: 1.25rem;
+                    width: 100%;
+                    height: 100%;
+                    color: $primary;
+                    background-color: $secondary;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

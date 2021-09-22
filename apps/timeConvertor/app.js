@@ -27,8 +27,8 @@ const timeConversion = () => {
         const hour = 60 * min;
         const day = 24 * hour;
         const week = 7 * day;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -79,8 +79,8 @@ const timeConversion = () => {
         const hour = 60 * min;
         const day = 24 * hour;
         const week = 7 * day;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -131,8 +131,8 @@ const timeConversion = () => {
         const hour = 60 * min;
         const day = 24 * hour;
         const week = 7 * day;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -183,8 +183,8 @@ const timeConversion = () => {
         const milisec = 1000 * sec;
         const day = 24 * hour;
         const week = 7 * day;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -235,8 +235,8 @@ const timeConversion = () => {
         const sec = 60 * min;
         const milisec = 1000 * sec;
         const week = 7 * day;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -287,8 +287,8 @@ const timeConversion = () => {
         const min = 60 * hour;
         const sec = 60 * min;
         const milisec = 1000 * sec;
-        const month = 30 * day;
-        const year = 365 * day;
+        const month = 4.285714285714286 * week;
+        const year = 12 * month;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);
@@ -334,13 +334,13 @@ const timeConversion = () => {
     // when input-unit => month
     if (ipUnit.value == "month") {
         const month = 1;
+        const year = 12 * month;
         const week = 4.285714285714286 * month;
         const day = 7 * week;
         const hour = 24 * day;
         const min = 60 * hour;
         const sec = 60 * min;
         const milisec = 1000 * sec;
-        const year = 365 * day;
         if (opUnit.value == "milisecond") {
             let result = ipValue.value * milisec;
             // console.log(result);

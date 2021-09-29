@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta-tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Length Convertor | Home</title>
+
+    <!-- Custom-styling -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+
+    <section class="container">
+        <table class="convertor-container">
+            <tr class="values-box">
+                <td id="input-value-box">
+                    <input type="text" name="input-value" value="" placeholder="00" id="input-value" maxlength="10" autocomplete="off" oninput="lenConversion()" required/>
+                </td>
+                <td id="equal-to">=</td>
+                <td id="output-value-box">
+                    <input type="text" name="output-value" value="" placeholder="00" id="output-value" disabled/>
+                </td>
+            </tr>
+            <tr class="units-box">
+                <td id="input-unit-box">
+                    <select name="input-unit" id="input-unit" onchange="lenConversion()">
+                        <option value="micrometer">Micrometer</option>
+                        <option value="milimeter">Milimeter</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="mile">Mile</option>
+                    </select>
+                </td>
+                <td></td>
+                <td id="output-unit-box">
+                    <select name="output-unit" id="output-unit" onchange="lenConversion()">
+                        <option value="micrometer">Micrometer</option>
+                        <option value="milimeter">Milimeter</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="mile">Mile</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Custom-scripting -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

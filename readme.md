@@ -9,3 +9,6 @@ The lists are as follows:
 - [Analog Clock](https://github.com/bibashmgr/mini-projects/tree/master/apps/analogClock/)
 - [Time Convertor](https://github.com/bibashmgr/mini-projects/tree/master/apps/timeConvertor/)
 - [Temperature Convertor](https://github.com/bibashmgr/mini-projects/tree/master/apps/temperatureConvertor/)
+- [Mass Convertor](https://github.com/bibashmgr/mini-projects/tree/master/apps/massConvertor/)
+- [Length Convertor](https://github.com/bibashmgr/mini-projects/tree/master/apps/lengthConvertor/)
+- [SI Calculator](https://github.com/bibashmgr/mini-projects/tree/master/apps/siCalculator/)

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta-tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SI Calculator</title>
+
+    <!-- custom-styling -->
+    <link rel="stylesheet" href="../../bootstrap/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./styles/main.css" /> -->
+
+</head>
+
+<body>
+
+    <!-- section: calculator -->
+    <section class="container d-flex flex-column justify-content-center align-items-center mt-5">
+
+        <!-- heading -->
+        <div class="row mt-5 mb-5">
+            <div class="h1 text-uppercase fw-bolder">
+                SI Calculator
+            </div>
+        </div>
+
+        <!-- input-container -->
+        <div class="row">
+            <form class="form">
+                <div class="row">
+                    <label for="input-principal" class="form-label">Principal Amount(Rs.):</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input-principal" autocomplete="off" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="input-rate" class="form-label">Rate of Interest:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input-rate" autocomplete="off" required />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="input-time" class="form-label">Time Period:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input-time" autocomplete="off" required />
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="input-group">
+                        <input type="button" value="Find SI" class="btn btn-primary form-control" id="btn-find" onclick="calculateSI()" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- output-container -->
+        <div class="row mt-5">
+            <div class="fw-bolder fs-5">
+                <span class="">Interest Earned : </span>
+                <span class="text-decoration-underline" id="span-output"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- custom-scripting -->
+    <script src="../../bootstrap/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
